@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.InputSystem;
 using Cinemachine;
 using System.Collections;
@@ -28,8 +28,8 @@ public class CameraSwitcher : MonoBehaviour
     }
 
     /// <summary>
-    /// ƒJƒƒ‰‚ğFPS‚ÉØ‚è‘Ö‚¦‚é‚ÉŒÄ‚ÔƒRƒ‹[ƒ`ƒ“
-    /// ƒJƒƒ‰‚ªB‰e‚µ‚Ä‚¢‚é•ûŒü‚ğŒü‚­
+    /// ã‚«ãƒ¡ãƒ©ã‚’FPSã«åˆ‡ã‚Šæ›¿ãˆã‚‹æ™‚ã«å‘¼ã¶ã‚³ãƒ«ãƒ¼ãƒãƒ³
+    /// ã‚«ãƒ¡ãƒ©ãŒæ’®å½±ã—ã¦ã„ã‚‹æ–¹å‘ã‚’å‘ã
     /// </summary>
     /// <returns></returns>
     IEnumerator LookForward()
@@ -47,7 +47,7 @@ public class CameraSwitcher : MonoBehaviour
 
         for (float timer = 0; timer < duration; timer += Time.deltaTime)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime / (duration * 0.3f));   // duration ‚Ì3Š„‚ÌŠÔ‚Å•ûŒü‚ğ•Ï‚¦‚é
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime / (duration * 0.3f));   // duration ã®3å‰²ã®æ™‚é–“ã§æ–¹å‘ã‚’å¤‰ãˆã‚‹
             yield return new WaitForEndOfFrame();
         }
     }
